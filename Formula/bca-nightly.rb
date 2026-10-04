@@ -2,35 +2,35 @@
 class BcaNightly < Formula
   desc "Command-line access to Better Coding Agent workspaces (nightly channel)"
   homepage "https://better-coding-agent.com"
-  version "0.3.1"
+  version "0.4.1"
 
   on_macos do
     on_arm do
-      url "https://releases.better-coding-agent.com/cli/nightly/0.3.1/bca-0.3.1-darwin-arm64.tar.gz"
-      sha256 "e3034673e827aa5b0418073a670e7e24ad45850b402da9f94cc43e822b32ff82"
+      url "https://releases.better-coding-agent.com/cli/nightly/0.4.1/bca-0.4.1-darwin-arm64.tar.gz"
+      sha256 "64268d9a2bfd8282e20ba49539057873eeb61b36d6829146e143110ac357b084"
     end
     on_intel do
-      url "https://releases.better-coding-agent.com/cli/nightly/0.3.1/bca-0.3.1-darwin-x64.tar.gz"
-      sha256 "7521267d4c25c16c4b732c7fae24fa8d86679fdbe53c38a9c87887865d2dade3"
+      url "https://releases.better-coding-agent.com/cli/nightly/0.4.1/bca-0.4.1-darwin-x64.tar.gz"
+      sha256 "f666a7ac1ce96de3f1041f0d9ad8520f386fed678047c265e2e13d0924d3e4c6"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://releases.better-coding-agent.com/cli/nightly/0.3.1/bca-0.3.1-linux-arm64.tar.gz"
-      sha256 "042e2690513ea426a62d0e8bdec56bb94e9741a95bce75d14054e06ad0a136e5"
+      url "https://releases.better-coding-agent.com/cli/nightly/0.4.1/bca-0.4.1-linux-arm64.tar.gz"
+      sha256 "366700cee9048a7f55e1d0300037bd41f2b57e084e2ac35f30d6c417f9cb439d"
     end
     on_intel do
-      url "https://releases.better-coding-agent.com/cli/nightly/0.3.1/bca-0.3.1-linux-x64.tar.gz"
-      sha256 "43654586021989e5e4af8111e369ce56d04e13c718c08a4c07d4472a5b8e8887"
+      url "https://releases.better-coding-agent.com/cli/nightly/0.4.1/bca-0.4.1-linux-x64.tar.gz"
+      sha256 "f09e43a8b1b0da873229613fdef3e1d9afe514649283944b2fb4965cb932d8be"
     end
   end
 
   conflicts_with "better-coding-agent/tap/bca", because: "every channel installs the bca command"
-  conflicts_with "better-coding-agent/tap/bca-staging", because: "every channel installs the bca command"
 
   def install
     bin.install "bca"
+    (libexec/"channel").write "nightly\n"
   end
 
   test do
