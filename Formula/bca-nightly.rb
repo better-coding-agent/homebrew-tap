@@ -2,27 +2,27 @@
 class BcaNightly < Formula
   desc "Command-line access to Better Coding Agent workspaces (nightly channel)"
   homepage "https://better-coding-agent.com"
-  version "0.12.1"
+  version "0.13.1"
 
   on_macos do
     on_arm do
-      url "https://releases.better-coding-agent.com/cli/nightly/0.12.1/bca-0.12.1-darwin-arm64.tar.gz"
-      sha256 "86594886dae358233c99a63af7c8a6f8ac622ae877b6c2a9cba3cc4ea3bfd4d7"
+      url "https://releases.better-coding-agent.com/cli/nightly/0.13.1/bca-0.13.1-darwin-arm64.tar.gz"
+      sha256 "02b1b75d8e81e4cf9fd40325abd7af10b959a6ec5784d4914709f5c3b87133f2"
     end
     on_intel do
-      url "https://releases.better-coding-agent.com/cli/nightly/0.12.1/bca-0.12.1-darwin-x64.tar.gz"
-      sha256 "6b4028b493151757f3f4ce63ae3111d14204952775fdcf43d7e3310933996c8f"
+      url "https://releases.better-coding-agent.com/cli/nightly/0.13.1/bca-0.13.1-darwin-x64.tar.gz"
+      sha256 "43822b9e058e40450f9259bb267b13b9f7c02e9b1e90628598192b03286ad684"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://releases.better-coding-agent.com/cli/nightly/0.12.1/bca-0.12.1-linux-arm64.tar.gz"
-      sha256 "24c0e0bbd7b543947bb772d97bfa4ac1c76c13b867394b2284b996319911674a"
+      url "https://releases.better-coding-agent.com/cli/nightly/0.13.1/bca-0.13.1-linux-arm64.tar.gz"
+      sha256 "3baefa4f61d3962c4980c2db404213268672242c3804967ed24ea14a1c0b29e8"
     end
     on_intel do
-      url "https://releases.better-coding-agent.com/cli/nightly/0.12.1/bca-0.12.1-linux-x64.tar.gz"
-      sha256 "9882e9b60591e48ccda832f628319a710821f47018d8add3d96e55b375faca54"
+      url "https://releases.better-coding-agent.com/cli/nightly/0.13.1/bca-0.13.1-linux-x64.tar.gz"
+      sha256 "350705c04a78a860771e74a17a9f90227877983f785e8e38f9784c691ab2a9c0"
     end
   end
 
